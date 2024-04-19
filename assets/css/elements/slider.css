@@ -1,14 +1,9 @@
-.slider {
-  position: relative;
-  overflow: hidden;
-  height: 182px;
-}
-
 .slider__prev, .slider__next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
+  display: none;
 }
 
 .slider__prev {
@@ -40,7 +35,6 @@
 }
 
 .slide {
-  position: absolute;
   top: 0;
   transition: all .3s linear;
 }
@@ -80,4 +74,10 @@
 }
 .slider__radio4:checked ~ .slide {
   transform: translateX(-300%);
+}
+
+@media (max-width: 440px) {
+  .slider__prev, .slider__next {
+    display: block;
+  }
 }

@@ -120,7 +120,14 @@
 }
 
 @media (max-width: 440px) {
+  .benefits__list {
+    position: relative;
+    overflow: hidden;
+    height: 182px;
+  }
+
   .benefits__item {
+    position: absolute;
     width: 100%;
   }
 }
