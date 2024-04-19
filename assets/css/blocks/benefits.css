@@ -1,0 +1,126 @@
+.benefits {
+  color: var(--secondary-text-color);
+  text-align: center;
+}
+
+.benefits__text {
+  max-width: 724px;
+  margin: 0 auto 58px auto;
+  line-height: 1.41;
+}
+
+.benefits__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  counter-reset: benefits 0;
+  max-width: 934px;
+  margin: 0 auto;
+}
+
+.benefits__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 196px;
+  counter-increment: benefits;
+}
+
+.benefits__item::before {
+  content: counter(benefits);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 122px;
+  height: 122px;
+  font-weight: 500;
+  font-size: 57px;
+  line-height: 1;
+  color: var(--main-text-color);
+  border-radius: 50%;
+  background-color: #23c7ec;
+  margin-bottom: 14px;
+  padding-top: 9px;
+}
+
+.benefits__item-title {
+  font-weight: 500;
+  font-size: 20px; 
+  line-height: 1.41;
+  text-align: center;
+  color: var(--secondary-text-color);
+  padding-bottom: 2px;
+}
+
+@media (max-width: 1200px) {
+  .benefits__text {
+    font-size: 16px;
+    max-width: 666px;
+    margin-bottom: 60px;
+  }
+
+  .benefits__list {
+    max-width: 870px;
+  }
+
+  .benefits__item {
+    max-width: 180px;
+  }
+
+  .benefits__item::before {
+    font-size: 52px;
+    line-height: 1.41;
+    width: 104px;
+    height: 104px;
+    padding-top: 0;
+    margin-bottom: 26px;
+  }
+
+  .benefits__item-title {
+    font-size: 18px;
+    white-space: pre-wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefits__text {
+    font-size: 14px;
+    max-width: 540px;
+    margin-bottom: 40px;
+  }
+
+  .benefits__list {
+    flex-wrap: wrap;
+  }
+
+  .benefits__item {
+    max-width: none;
+    width: calc(50% - 10px);
+  }
+
+  .benefits__item-title {
+    max-width: 200px
+  }
+}
+
+@media (max-width: 560px) {
+  .benefits__text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .benefits {
+    padding-bottom: 58px;
+  }
+
+  .benefits__text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 440px) {
+  .benefits__item {
+    width: 100%;
+  }
+}

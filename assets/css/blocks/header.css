@@ -1,0 +1,27 @@
+.header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-top: 40px;
+  z-index: 1;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding-top: 26px;
+  }
+}
+
+@media (max-width: 480px ) {
+  .header {
+    padding-top: 15px;
+  }
+}

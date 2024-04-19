@@ -1,0 +1,31 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 68px;
+  height: 68px;
+  font-family: var(--secondary-font-family);
+  font-size: 25px;
+  color: var(--main-text-color);
+  padding: 8px 5px 15px 8px;
+  border-radius: 50%;
+  background-color: #15a9cb;
+}
+
+@media (max-width: 1200px) {
+  .logo {
+    font-size: 22px;
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    font-size: 11px;
+    padding: 0;
+  }
+}

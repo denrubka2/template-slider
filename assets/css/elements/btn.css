@@ -1,0 +1,26 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 12px 48px;
+  background-color: #15a9cb;
+  box-shadow: 0 4px 25px 0 rgba(21, 169, 203, 0.3);
+  max-width: fit-content;
+  border-radius: 50px;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+@media (max-width: 1200px) {
+  .btn {
+    padding: 12px 49px;
+  }
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 16px;
+    padding: 9px 39px;
+  }
+}
